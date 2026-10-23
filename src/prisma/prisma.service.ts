@@ -9,7 +9,7 @@ export class PrismaService
 {
   constructor() {
     const adapter = new PrismaPg({
-      connectionString: process.env.DATABASE_URL,
+      connectionString: "postgresql://postgres:2007@localhost:5432/Prueba?schema=public",
     });
 
     super({ adapter });
